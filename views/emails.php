@@ -42,11 +42,15 @@ if (isset($_GET['view_action'])) {
             'server_id' => intval($_REQUEST['svrid']),
             'uid' => 5000,
             'gid' => 5000,
+			'name' => $_REQUEST['email'].'@'.$_REQUEST['domain'],
             'homedir' => '/var/vmail',
             'maildir' => '/var/vmail/'.$_REQUEST['domain'].'/'.$_REQUEST['email'],
             'maildir_format' => 'maildir',
             'postfix' => 'y',
-            'access' => 'y'
+            'access' => 'y',
+			'move_junk' => 'y',
+			'purge_trash_days' => '0',
+			'purge_junk_days' => '0'
         );
         $create = cwispy_soap_request($params, 'mail_user_add', $domain_options);
         if ($create['status'] == 'success') {
