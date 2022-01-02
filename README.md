@@ -4,7 +4,7 @@
 * Requires ISPConfig 3.1+
 * Requires WHMCS 7+
 
-Copyright (C) 2014 - 2018  Shane Chrisp
+original Version based on -> (C) 2014 - 2018  Shane Chrisp
 
 ```
 This program is free software: you can redistribute it and/or modify
@@ -34,6 +34,14 @@ It will no longer work with older versions of ISPConfig
 - Download the zip file and extract the contents to the directory you just created, or from the shell change into the directory you just and use ```git clone https://github.com/cwispy/ispcfg3.git .``` to download the repository.
 - Edit the file ispcfg3.php and make sure that you turn off the display_errors is set to 0 ```ini_set("display_errors", 0);```
 
-It is no longer necessary to upload any files into the ispconfig remote.d directory.
-
 Further setup instrutions can be found in our [GitHub Wiki](https://github.com/cwispy/ispcfg3/wiki)
+
+Changes / Addition:
+- added missing language parts in lang\english.php
+- added german language file
+- changed missing database fields (with default settings) in views\email.php
+
+Tested with
+- Debian 11
+- ispconfig 3.2.7
+- whmcs 8.3.2
