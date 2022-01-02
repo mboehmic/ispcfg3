@@ -17,6 +17,17 @@ $_LANG['ispcfg3_delete_dns_record'] = "Delete DNS Record";
 $_LANG['ispcfg3_delete_dns_confirm'] = "Are you sure you want to delete this DNS record?";
 $_LANG['ispcfg3_emails'] = "Emails";
 $_LANG['ispcfg3_email_forwarders'] = "Email Forwarders";
+$_LANG['ispcfg3_add_email'] = "Add Email";
+$_LANG['ispcfg3_create_email_account'] = "Create Email Account";
+$_LANG['ispcfg3_add_forwarder'] = "Add Email Forwarder";
+$_LANG['ispcfg3_add_email_forwarder'] = "Add Email Forwarder";
+$_LANG['ispcfg3_create_email_forwarder'] = "Create Email Forwarder";
+$_LANG['ispcfg3_delete_email_forwarder'] = "Delete Email Forwarder";
+
+$_LANG['ispcfg3_cancel'] = "Cancel";
+$_LANG['ispcfg3_update'] = "Update";
+
+
 $_LANG['ispcfg3_file_manager'] = "File Manager";
 $_LANG['ispcfg3_ftp_accounts'] = "FTP Accounts";
 $_LANG['ispcfg3_hour'] = "Hour";
